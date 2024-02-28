@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import App from './App.vue'
-import './plugins/elements';// импортируем все ui элементы
-//теперь все ui элементы доступны везде без какого-либо импорта
+import './plugins/elements';
 
 Vue.config.productionTip = false
 

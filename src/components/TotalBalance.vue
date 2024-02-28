@@ -4,15 +4,13 @@
 
 <script>
 export default {
-  name: 'TotalBalance', // устанавливаем имя компоненты
-    props: { // принимает props свойства total
-      total: { // total будем выводить внутри <div class="total-value"
+  name: 'TotalBalance',
+    props: {
+      total: {
           type: Number,
           default: 0,
       }
-    },
-    // computed:{
-    // }
+    }
 };
 </script>
 

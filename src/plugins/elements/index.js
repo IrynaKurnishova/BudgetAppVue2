@@ -1,8 +1,7 @@
-import Vue from 'vue'; //импортируем само Vue
-import lang from 'element-ui/lib/locale/lang/en'; //импортируем англ язык из библиотеки
-import locale from 'element-ui/lib/locale'; // импортируем locale - параметр, определяющий язык и
-//региональные настройки для конкретного местоположение и пользователя
-import 'element-ui/packages/theme-chalk/lib/index.css';// импорт стилей
+import Vue from 'vue';
+import lang from 'element-ui/lib/locale/lang/en';
+import locale from 'element-ui/lib/locale';
+import 'element-ui/packages/theme-chalk/lib/index.css';
 import {
     Button,
     Card,
@@ -12,7 +11,7 @@ import {
     Select,
     Option,
     Alert
-} from 'element-ui'; // импорт отдельных компонент
+} from 'element-ui';
 
 const elements = [
     Button,
@@ -23,13 +22,11 @@ const elements = [
     Select,
     Option,
     Alert
-]; // объединяем все компоненты в один массив
+];
 
-locale.use(lang); // вызывая метод use у locale мы заставим этот
-//фреймворк работать на англ а не на китайском
+locale.use(lang);
 
 elements.forEach(El => Vue.use(El, { locale }));
-//импортировали все элементы из element-ui и сделали все элементы
-//глобальными для всего проекта
+
 
 
